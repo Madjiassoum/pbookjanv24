@@ -1,0 +1,20 @@
+.heberComp{
+    display: none;
+    flex-direction: column;
+    width: 320px;
+    height: 250px;
+    margin-bottom: 1.5em;
+    .divImg{
+        width: 100%;
+    .imgCard{height: 200px;object-fit: cover;width: 100%;}
+    }
+    .divText{
+        width: 100%;
+        margin-top: -.25em;
+        background-color: #beefff;
+        h2{font-size: 1.2em;}
+        h3{font-size: 1em;}
+        h4{font-size: .9em;}
+    }
+}
+

@@ -1,0 +1,19 @@
+.div-activiteComp{
+    display: none;
+    width: 18em;
+    .imgCard{
+        object-fit: cover;
+        height: 350px;
+        width: 100%;
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+    }
+    h4{
+        margin: 0;
+        font-size: 1em;
+        padding-left: 1em;
+        background-color: #DEEBFF;
+        margin-top: -.2em;
+    }
+
+}

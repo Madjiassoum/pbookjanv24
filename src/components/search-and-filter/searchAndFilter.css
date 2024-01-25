@@ -1,0 +1,96 @@
+body .safil {
+  background-color: rgb(25, 201, 232);
+  width: 100%;
+}
+body .safil .div-title {
+  border: 3px solid rgb(0, 0, 0);
+  margin: 1em 0;
+}
+body .safil .div-title h1, body .safil .div-title p {
+  margin: 0.2em;
+}
+body .safil .choix {
+  background-color: yellow;
+}
+body .safil .choix .choix-premier {
+  background-color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.2em;
+}
+body .safil .choix .choix-premier .fasear {
+  display: none;
+}
+body .safil .choix .choix-premier input {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1em;
+  border: 0.1em solid transparent;
+}
+body .safil .choix .choix-premier .bouton {
+  border: 0.1em solid transparent;
+  font-size: 1.1em;
+  color: white;
+  background-color: blue;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.2em 0.7em;
+  margin-left: -1px;
+}
+body .safil .choix .choix-deuxieme {
+  display: flex;
+  align-items: center;
+}
+body .safil .choix .choix-deuxieme .mes-li-container {
+  display: flex;
+  border: #fF3F10 solid 1px;
+  font-size: 1.1em;
+  list-style-type: none;
+}
+body .safil .choix .choix-deuxieme .mes-li-container i {
+  color: #0065FC;
+  margin-right: 0.5em;
+}
+body .safil .choix .choix-deuxieme .mes-li-container input {
+  display: none;
+}
+body .safil .choix .choix-deuxieme .unit-filtre {
+  margin-right: 1em;
+  border: #d9d9d9 solid 1px;
+  border-radius: 1em;
+  padding: 0.3em 0.6em;
+}
+
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #fF3F10;
+  }
+  .safil h1 {
+    font-size: 1.4em;
+  }
+  .safil .choix .choix-premier .fasear {
+    display: flex;
+  }
+  .safil .choix .choix-premier .bouton {
+    display: none;
+  }
+  .safil .choix .choix-deuxieme {
+    display: flex;
+    flex-direction: column;
+  }
+  .safil .choix .choix-deuxieme .label-filtre {
+    width: 100%;
+    text-align: left;
+  }
+  .safil .choix .choix-deuxieme .mes-li-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .safil .choix .choix-deuxieme .mes-li-container .unit-filtre {
+    margin-bottom: 1em;
+  }
+}/*# sourceMappingURL=searchAndFilter.css.map */

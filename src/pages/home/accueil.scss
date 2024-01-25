@@ -1,0 +1,100 @@
+*{
+    h2{font-size: 1.2em;}
+    h3{font-size: 1.1em;}
+    h4{font-size: .9em;}
+}
+body{
+    background-color: #F2F2F2;
+}
+.div-accueil{
+
+    // margin: auto;
+    width: 100%;
+    // font-size: 1.1em;
+    // padding: .1em;
+    // .searFil, .hebPop, .act{
+        // width: 95%;
+        // margin: 1em;
+    // }
+    .hebPop{
+        display: none;
+        // margin: auto;
+        // margin-bottom: 1em;
+    }
+    .hebPop .heb{
+        display: flex;
+        // flex-direction: column;
+        width: 65%;
+        // height: auto;
+        // margin-bottom: 2em;
+        // margin-top: 2em;
+        // margin: auto;
+        .hebCardsContainer{
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+    // .hebPop .pop{
+        // width: 30%;
+        // margin: 0.5em;
+        // height: 6em;
+        // border: .1em solid blue;
+        // display: flex;
+        // flex-direction: column;
+    // }
+    .act{
+        display: none;
+        flex-direction: column;
+        // width: 100%;
+        // margin: auto;
+        margin-bottom: 1.5em;
+        .actContainerAccueil{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: .3em solid blue;
+            padding: 0.2em;
+        }
+        h3{
+            margin: 1em 0;
+        }
+        
+    }
+}
+.searFil{
+     display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+}
+
+
+
+
+
+
+// version tablette
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    // .actContainerAccueil{
+        
+    // }
+
+}
+
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 767px) {
+
+}
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}

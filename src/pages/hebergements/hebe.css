@@ -1,0 +1,11 @@
+.divHeb {
+  background-color: orchid;
+  width: 100%;
+}
+
+.containerHeb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=hebe.css.map */

@@ -1,0 +1,48 @@
+/* Partie PIED DE PAGE */
+* {
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #F2F2F2;
+  background-color: #F2F;
+}
+
+.sousfoot h4 {
+  margin: 0.4em;
+}
+.sousfoot h4 a, .sousfoot h4 h3 {
+  color: rgba(44, 35, 35, 0.4509803922);
+}
+
+.sousfoot {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: left;
+}
+
+/* survol cellule pied de page*/
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .sousfoot {
+    width: 100%;
+  }
+  .sousfoot h4 {
+    margin: 0.3em;
+  }
+  .sousfoot h4 a {
+    display: block;
+  }
+  h3 {
+    margin: 0.3em;
+  }
+}/*# sourceMappingURL=foot.css.map */

@@ -1,0 +1,30 @@
+.heberComp {
+  display: none;
+  flex-direction: column;
+  width: 320px;
+  height: 250px;
+  margin-bottom: 1.5em;
+}
+.heberComp .divImg {
+  width: 100%;
+}
+.heberComp .divImg .imgCard {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.heberComp .divText {
+  width: 100%;
+  margin-top: -0.25em;
+  background-color: #beefff;
+}
+.heberComp .divText h2 {
+  font-size: 1.2em;
+}
+.heberComp .divText h3 {
+  font-size: 1em;
+}
+.heberComp .divText h4 {
+  font-size: 0.9em;
+}/*# sourceMappingURL=heberge.css.map */
