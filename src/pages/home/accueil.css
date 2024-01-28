@@ -21,6 +21,14 @@ body {
   height: auto;
   margin-bottom: 2em;
 }
+.div-accueil .hebPop .heb .afficherPlus {
+  font-size: 1.2em;
+  padding-left: 1em;
+}
+.div-accueil .hebPop .heb .afficherPlus:hover {
+  color: #d9d9d9;
+  cursor: pointer;
+}
 .div-accueil .hebPop .heb .hebCardsContainer {
   display: flex;
   flex-direction: row;

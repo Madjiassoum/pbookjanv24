@@ -19,6 +19,15 @@ body{
         flex-direction: column;
         height: auto;
         margin-bottom: 2em;
+        .afficherPlus{
+            font-size: 1.2em;
+            padding-left: 1em;
+        }
+        .afficherPlus:hover{
+            color: #d9d9d9;
+            cursor: pointer;
+        }
+            
         .hebCardsContainer{
             display: flex;
             flex-direction: row;

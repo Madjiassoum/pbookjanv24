@@ -70,11 +70,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+
+
+#### UNE APPLICATION "SINGLE PAGE " pour la société Booki
+     En attendant le jury final, j'essaie de reprendre les anciens projets sous des technologies avancées
+     Il n'y a pas déploiement de toutes les technologies mais sachez c'est mon début,
+     les choses vont s'améliorer.
+
+
 Générateur de id aléatoire pour mes images 
 https://miniwebtool.com/fr/random-string-generator/
 <!-- Perso -->
 Booki est une adaptation à ma maniere du projet dejà traité precedemment pendant mon parcours que j'adapte sous react en creant des Route(Une sorte d'Ancre du menu de navigation : Activités et Hébergements )
 Creation avec react, suppression de certains fichiers. Creation des dossiers: component, assets, pages, datas. Utilisation de: vscode, git...
 
+{-----
+ Ici Hebergements  et Activités sont des ANCRES en quelque sorte
+ En cliquant dessus on ouvre directement sur la page concernée.
+ ----}
 
-Là j'ai créé route hebergement et activités dans pages mais j'ai oublié d'injectés du code dedans, finalement tout est dans pages accueil et il y a comme des ANCRES pour arriver dessus.
+ ### MISE EN PAGE DIFFICILE POUR bouton Rechercher et l'icone search
+ => mode desktop et tablette pas de souci
+ => Mobile où le bouton rechercher doit disparaitre pour faire apparaite le bouton-Icon "search"
+     Le bouton rechercher ne disparait pas en display:none
+     le bouton-search n'apparait pas display-flex.
+     *** Et pourtant j'ai réussi à mon début facilement.
+     Je reviendrais dessus dans les jours prochains.
+
+
+### flexbox
+     Aussi il faut reconnaitre que c'est un peux difficile jongler entre plusieurs images.
+
+### Une base de données disons DYNAMIQUE
+    On peut faire une petite modif de rating et le tout change.
+
+### et react à jouer un rôle important puisqu'on n'est pas obligé de recréer du code 
+   Les components suffisent
+
+

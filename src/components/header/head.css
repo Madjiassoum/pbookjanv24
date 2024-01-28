@@ -43,6 +43,7 @@
 
 .soulignement-Item {
   border-bottom: 0.1em solid #0065FC;
+  color: #0065FC;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

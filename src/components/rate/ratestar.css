@@ -11,10 +11,6 @@
 }
 
 .etoileG {
-  filter: brightness(10%);
-  opacity: 0.7;
-}
-
-.etoileP {
-  background-image: blue;
+  filter: brightness(80%);
+  opacity: 0.5;
 }/*# sourceMappingURL=ratestar.css.map */

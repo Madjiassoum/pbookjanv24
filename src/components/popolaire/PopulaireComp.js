@@ -12,7 +12,7 @@ return dbpop.map((lement) =>{
         <img className="imgCard" src={lement.imgUrl} alt={lement.title} />
         <div className='lesH'>
           <div className='h2h3'>
-             <h5>{lement.title}</h5>
+             <h4>{lement.title}</h4>
              <h6>{lement.description}</h6>
           </div>
           <div className='rating'>
