@@ -1,56 +1,116 @@
 @charset "UTF-8";
-* h2 {
-  font-size: 1.2em;
-}
-* h3 {
-  font-size: 1.1em;
-}
-* h4 {
-  font-size: 0.9em;
-}
-
 body {
-  background-color: #F2F2F2;
+  background-color: #FFF;
 }
 
 .div-accueil {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .div-accueil .hebPop {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F2f2f2;
 }
 .div-accueil .hebPop .heb {
+  width: 69%;
   display: flex;
-  width: 65%;
+  flex-direction: column;
+  height: auto;
+  margin-bottom: 2em;
 }
 .div-accueil .hebPop .heb .hebCardsContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+.div-accueil .hebPop .pop {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+}
+.div-accueil .hebPop .pop h2 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.5em;
+}
+.div-accueil .hebPop .pop h2 .fa-chart-line {
+  color: #0065fc;
+}
+.div-accueil .hebPop .pop .popCardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .div-accueil .act {
-  display: none;
+  display: flex;
   flex-direction: column;
+  width: 100%;
   margin-bottom: 1.5em;
 }
 .div-accueil .act .actContainerAccueil {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 0.3em solid blue;
-  padding: 0.2em;
+  margin: auto;
 }
 .div-accueil .act h3 {
   margin: 1em 0;
 }
 
-.searFil {
-  display: flex;
-  width: 100%;
-  margin: auto;
-  background-color: black;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .div-accueil {
+    width: 100%;
+  }
+  .div-accueil .hebPop {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    width: 100%;
+  }
+  .div-accueil .hebPop .heb, .div-accueil .hebPop .pop {
+    width: 100%;
+    margin: 5px auto;
+  }
+  .div-accueil .hebPop .heb .hebCardsContainer {
+    width: 100%;
+  }
+  .div-accueil .hebPop .pop .popCardsContainer {
+    width: 100%;
+    flex-direction: row;
+  }
 }
-
 /* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 768px) {
+  .div-accueil {
+    width: 100%;
+  }
+  .div-accueil .hebPop {
+    border: 10px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .div-accueil .hebPop .pop, .div-accueil .hebPop .heb {
+    display: block;
+    width: 100%;
+  }
+  .act {
+    width: 100%;
+    height: auto;
+  }
+  .act h3 {
+    font-size: 0.8em;
+  }
+  .act .actContainerAccueil {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 3em;
+  }
+}
 /* orientation paysage et portrait sur petits écrans */
 @media (orientation: landscape) {
   body {

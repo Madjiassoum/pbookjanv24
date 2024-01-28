@@ -28,16 +28,14 @@ export default function SearchAndFilter() {
                         <i className="fas fa-search"></i>
                     </button>
                     <button className="button bouton" type="submit">
-                        <span>
                         Rechercher
-                        </span>
                     </button>
                 </div>
 
                 <div className="choix-deuxieme">
                     <h3 className="label-filtre">Filtres</h3>
-                    <ul className="mes-li-container">
-                        <li className="unit-filtre">
+                    <div className="mes-li-container">
+                        <div className="unit-filtre">
                             <input
                                 name="type-hebergement"
                                 id="economique"
@@ -55,9 +53,9 @@ export default function SearchAndFilter() {
                                     Économique
                                 </span>
                             </label>
-                        </li>
+                        </div>
 
-                        <li className="unit-filtre">
+                        <div className="unit-filtre">
                             <input
                                 name="type-hebergement"
                                 id="familial"
@@ -75,9 +73,9 @@ export default function SearchAndFilter() {
                                     Familial
                                 </span>
                             </label>
-                        </li>
+                        </div>
 
-                        <li className="unit-filtre">
+                        <div className="unit-filtre">
                             <input
                                 name="type-hebergement"
                                 id="romantique"
@@ -95,9 +93,9 @@ export default function SearchAndFilter() {
                                     Romantique
                                 </span>
                             </label>
-                        </li>
+                        </div>
 
-                        <li className="unit-filtre">
+                        <div className="unit-filtre">
                             <input
                                 name="type-hebergement"
                                 id="animal"
@@ -116,8 +114,8 @@ export default function SearchAndFilter() {
                                     Nos pépites
                                 </span>
                             </label>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </form>
             {/* Point d'information des filtres */}

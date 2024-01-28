@@ -1,15 +1,89 @@
-.header-container {
-  background-color: rgb(197, 197, 219);
+@charset "UTF-8";
+.header {
+  display: flex;
   margin: auto;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  width: 90%;
 }
-.header-container nav {
-  background-color: rgb(235, 240, 91);
-  width: 20%;
+
+/* Image logo header*/
+.logo-bouki {
+  align-self: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 3em;
+}
+
+/** div menu de navigation*/
+.div-header {
   display: flex;
-  margin-left: 1em;
-  font-size: 1.3em;
+  flex-direction: row;
+  align-self: center;
+}
+
+/* parties logo et menus de navigation du eader*/
+.divHeaderLink-home,
+.divHeaderLink-about {
+  font: 2em bold normal;
   justify-content: space-between;
+  margin-left: 2em;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+  border-bottom: 0.1em solid #fff;
+}
+
+.divHeaderLink-home:hover,
+.divHeaderLink-about:hover {
+  border-bottom: 0.1em solid #0065fc;
+  color: blue;
+}
+
+.soulignement-Item {
+  border-bottom: 0.1em solid #0065FC;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+}
+/* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .header .logo-header {
+    display: flex;
+    justify-content: center;
+  }
+  .div-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+  .logo-bouki {
+    height: 1.3em;
+  }
+  .divHeaderLink-home,
+  .divHeaderLink-about {
+    font-size: 1.4em;
+  }
+}
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=head.css.map */

@@ -1,9 +1,16 @@
 .div-activiteComp{
-    display: none;
-    width: 18em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 2px #d9d9d9;
+    border-radius: 1em;
+    width: 23%;
+    background-color: #f2f2f2;
+    height: 20em;
+    margin-bottom: 1em;
+    
     .imgCard{
         object-fit: cover;
-        height: 350px;
+        height: 18em;
         width: 100%;
         border-top-right-radius: 1em;
         border-top-left-radius: 1em;
@@ -12,8 +19,33 @@
         margin: 0;
         font-size: 1em;
         padding-left: 1em;
-        background-color: #DEEBFF;
         margin-top: -.2em;
     }
+}
 
+@media screen and (max-width: 767px) {
+    .div-activiteComp{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: 1px 2px 2px #d9d9d9;
+        border-radius: 1em;
+        width: 85%;
+        height: 11em;
+        margin-bottom: 1em;
+        margin: auto;
+        
+        .imgCard{
+            object-fit: cover;
+            height: 9em;
+            width: 100%;
+            border-top-right-radius: 1em;
+            border-top-left-radius: 1em;
+        }
+        h4{
+            height: 2em;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+    }
 }

@@ -1,90 +1,120 @@
-*{
-    h2{font-size: 1.2em;}
-    h3{font-size: 1.1em;}
-    h4{font-size: .9em;}
-}
+
 body{
-    background-color: #F2F2F2;
+    background-color: #FFF;
 }
 .div-accueil{
-
-    // margin: auto;
     width: 100%;
-    // font-size: 1.1em;
-    // padding: .1em;
-    // .searFil, .hebPop, .act{
-        // width: 95%;
-        // margin: 1em;
-    // }
+    display: flex;
+    flex-direction: column;
     .hebPop{
-        display: none;
-        // margin: auto;
-        // margin-bottom: 1em;
-    }
-    .hebPop .heb{
         display: flex;
-        // flex-direction: column;
-        width: 65%;
-        // height: auto;
-        // margin-bottom: 2em;
-        // margin-top: 2em;
-        // margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #F2f2f2;
+    }
+
+    .hebPop .heb{
+        width: 69%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 2em;
         .hebCardsContainer{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
         }
-
     }
-    // .hebPop .pop{
-        // width: 30%;
-        // margin: 0.5em;
-        // height: 6em;
-        // border: .1em solid blue;
-        // display: flex;
-        // flex-direction: column;
-    // }
-    .act{
-        display: none;
+    .hebPop .pop{
+        display: flex;
         flex-direction: column;
-        // width: 100%;
-        // margin: auto;
+        width: 29%;
+        h2{
+            display: flex;
+            justify-content: space-between;
+            margin-right: .5em;
+            .fa-chart-line{
+                color: #0065fc;
+            }
+        }
+        .popCardsContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    .act{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         margin-bottom: 1.5em;
+        
         .actContainerAccueil{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            border: .3em solid blue;
-            padding: 0.2em;
+            margin: auto;
         }
+        
         h3{
             margin: 1em 0;
         }
-        
     }
-}
-.searFil{
-     display: flex;
-    width: 100%;
-    margin: auto;
-    background-color: black;
-}
-
-
-
-
-
+}      
 
 // version tablette
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    // .actContainerAccueil{
-        
-    // }
-
+    .div-accueil{
+        width: 100%;
+        .hebPop{
+            display: flex;
+            flex-direction: column;
+            margin: 1em auto;
+            width: 100%;
+            // div de hebpop
+            .heb, .pop{
+                width: 100%;
+                margin: 5px auto;
+            }
+            .heb .hebCardsContainer{
+                width: 100%;
+            }
+            .pop .popCardsContainer{
+                width: 100%;
+                flex-direction: row;
+            }
+        }
+    }
 }
+        
+        /* En dessous de TABLETTES donc les mobiles */
+@media screen and (max-width: 768px) {
+    .div-accueil{
 
-/* En dessous de TABLETTES donc les mobiles */
-@media screen and (max-width: 767px) {
+        width: 100%;
+        .hebPop{
+            border: 10px solid black;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            .pop, .heb{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+   .act{
+       width: 100%;
+       height: auto;
 
+       h3{font-size: .8em;}
+       .actContainerAccueil{
+           display: flex;
+           flex-direction: column;
+           width: 95%;
+           margin-bottom: 3em;
+        }
+    }
 }
 /* orientation paysage et portrait sur petits écrans */
 @media (orientation: landscape) {

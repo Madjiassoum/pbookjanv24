@@ -75,3 +75,6 @@ https://miniwebtool.com/fr/random-string-generator/
 <!-- Perso -->
 Booki est une adaptation à ma maniere du projet dejà traité precedemment pendant mon parcours que j'adapte sous react en creant des Route(Une sorte d'Ancre du menu de navigation : Activités et Hébergements )
 Creation avec react, suppression de certains fichiers. Creation des dossiers: component, assets, pages, datas. Utilisation de: vscode, git...
+
+
+Là j'ai créé route hebergement et activités dans pages mais j'ai oublié d'injectés du code dedans, finalement tout est dans pages accueil et il y a comme des ANCRES pour arriver dessus.

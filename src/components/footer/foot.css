@@ -9,7 +9,6 @@
   flex-direction: row;
   justify-content: start;
   background-color: #F2F2F2;
-  background-color: #F2F;
 }
 
 .sousfoot h4 {
@@ -26,15 +25,17 @@
   text-align: left;
 }
 
-/* survol cellule pied de page*/
 /* En dessous de TABLETTES donc les mobiles */
 @media screen and (max-width: 767px) {
   .footer {
     display: flex;
     flex-direction: column;
+    padding: 0.5em;
   }
   .footer .sousfoot {
-    width: 100%;
+    width: 95%;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
   }
   .sousfoot h4 {
     margin: 0.3em;

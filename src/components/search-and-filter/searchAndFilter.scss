@@ -1,23 +1,40 @@
 body{
     .safil{
-        background-color: rgb(25, 201, 232);
+        display: flex;
+        flex-direction: column;
         width: 100%;
          .div-title{
-                border: 3px solid rgb(0, 0, 0);
                 margin: 1em 0;
             h1,p{
                 margin: .2em;
             }
         }
         .choix{
-            background-color: yellow;
             .choix-premier{
                 background-color: #ffffff;
                 margin-top: 1em;
                 margin-bottom: 1em; 
                 padding: .2em;
+                display: flex;
+                flex-direction: row;
+                .fa-map-marker-alt{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 3em;
+                    height: 3em;
+                }
                .fasear{
                 display: none;
+                background-color: #0065FC;
+                width: 3em;
+                height: 3em;
+                border-radius: .7em;
+                border: none;
+                font-size: 1em;
+                align-items: center;
+                justify-content: center;
+                color: white;
                 }
                 input{
                         font-size: 1.2em;
@@ -25,27 +42,28 @@ body{
                         line-height: 1em;
                         border: .1em solid transparent;
                     }
-                
                 .bouton {
+                    display: flex;
                     border: .1em solid transparent;
-                    font-size: 1.1em;
+                    font-size: 1em;
                     color: white;
                     background-color: blue;
                     border-top-right-radius: 1em;
                     border-bottom-right-radius: 1em;
                     text-align: center;
+                    align-items: center;
                     cursor: pointer;
                     padding: .2em .7em;
                     margin-left: -1px;
                 }
             }
             .choix-deuxieme{
-                // background-color: orange;
                 display: flex;
                 align-items: center;
+                // width: 80%;
                 .mes-li-container{
                     display: flex;
-                    border: #fF3F10 solid 1px;
+                    justify-content: flex-start;
                     font-size: 1.1em;
                     list-style-type: none;
                     i{
@@ -55,58 +73,106 @@ body{
                     input{display: none;}
                 }
                 .unit-filtre{
-                    margin-right: 1em;
                     border: #d9d9d9 solid 1px;
                     border-radius: 1em;
-                    padding: .3em .6em;
+                    padding: .2em .4em;
+                    margin: 0 .5em;
+                    label{
+                         color: black;
+                         font-family: cursive;
+                         font-size: 1em;
+                         line-height: 2em;
+                         padding: .4em 1em .6em 1em;
+                         border-radius: 1.2em;
+                         margin: 0 -.6em;
+                         border: .1em solid #d9d9d9;
+                         i{margin-right: 1em;
+                        }
+                        
+                    }
                 }
+                 input[type=checkbox]:checked ~ label{
+                     background-color: #deebff;
+                    }
+
+            }
+        }
+        .logement-info{
+            p{
+                display: flex;
+                .fa-info{
+                    margin-right: 1em;
+                    margin-left: .5em;
+                    width: 1.5em;
+                    height: 1.5em;
+                    border: #d9d9d9 solid 1px;
+                    background-color: #F2F2F2;
+                    border-radius: 50%;
+                    color: #0065FC;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                span{display: flex;
+                    align-items: center;}
             }
         }
     }
 }
-// @media screen and (min-width: 768px) and (max-width: 1024px) {
-  
-// }
+      
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .choix-deuxieme{
+        display: flex;
+    }
+    .mes-li-container{
+        font-size: .9em;
+        i{margin-right: .3em;}
+        .unit-filtre{
+            padding: .1em .2em;
+            font-size: .7em;
+        }
+    }
+}
 
 /* En dessous de TABLETTES donc les mobiles */
-@media screen and (max-width: 768px) {
-    body{
-        background-color: #fF3F10;
-    }
+@media screen and (max-width: 767px) {
     .safil{
         h1{
             font-size: 1.4em;
         };
         .choix{
-            .choix-premier{
-                .fasear{
-                    display: flex;
-                }
-                .bouton{display: none;}
-
-            }
+            
             .choix-deuxieme{
                 display: flex;
                 flex-direction: column;
                 .label-filtre{
-                    // display: flex;
                     width: 100%;
                     text-align: left;
-                    // border: #d9d9d9 solid 1px;
-
-                  
                 }
                 .mes-li-container{
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: flex-start;
                     .unit-filtre{
-                        margin-bottom: 1em;           }
+                        margin-bottom: 1em; 
+                        font-size: .9em;
+                  }
                     }
                 }
-                // h3{
-                //     text-align: left;
-                // }
+
+        
+    }
+
+
+        .choix-premier{
+            i{display: flex;}
+            
+            .button {
+                display: none;
+            }
         }
     }
 }
+ 
+                   

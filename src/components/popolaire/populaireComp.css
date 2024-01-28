@@ -1,5 +1,67 @@
 .popComp {
-  background-color: yellow;
-  border: 3px solid white;
-  margin: 2px;
+  display: flex;
+  border: 3px solid transparent;
+  width: 20em;
+  margin: auto;
+  border-radius: 1.1em;
+  margin-bottom: 1em;
+  box-shadow: 2px 5px 5px #d9d9d9;
+}
+.popComp img {
+  width: 33%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+  height: 10em;
+  margin: 0;
+}
+.popComp .lesH {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin-left: 0.5em;
+}
+.popComp .lesH h3 {
+  font-size: 1.1em;
+  margin: 0.2em;
+}
+.popComp .lesH h5 {
+  font-size: 1em;
+  margin-top: 0.2em;
+}
+.popComp .lesH .rating {
+  display: flex;
+  text-align: left;
+  align-self: start;
+  font-size: 1px;
+  margin-bottom: 0.51em;
+}
+.popComp h3 {
+  font-size: 1em;
+}
+.popComp h2, .popComp h3, .popComp h4, .popComp h5 {
+  display: flex;
+  margin: 0.4em;
+}
+
+.h2h3 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .popComp {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popComp {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+  }
 }/*# sourceMappingURL=populaireComp.css.map */

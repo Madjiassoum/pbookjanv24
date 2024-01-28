@@ -1,0 +1,22 @@
+.myRates-container{
+    // border: 1px solid red;
+    // margin: auto;
+    display: flex;text-align: left;
+    
+}
+
+
+.etoileG,
+.etoileP {
+  font-size: 2px;
+  width: 15px;
+  height: 15px;
+  // border: 1px transparent solid;
+}
+.etoileG{
+  filter: brightness(10%);
+  opacity: .7;
+}
+.etoileP{
+  background-image: blue;
+}

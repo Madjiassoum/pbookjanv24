@@ -1,30 +1,48 @@
 .heberComp {
-  display: none;
+  display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 250px;
-  margin-bottom: 1.5em;
+  justify-content: space-between;
+  width: 16em;
+  margin: auto;
+  margin-bottom: 2em;
+  border-radius: 1.2em;
+  box-shadow: 0.2em 0.3em 0.2em #d9d9d9;
+  background-color: #f2f2f2;
+  border: #fff solid 0.2em;
 }
 .heberComp .divImg {
   width: 100%;
 }
 .heberComp .divImg .imgCard {
-  height: 200px;
+  height: 9em;
+  border-top-right-radius: 1.2em;
+  border-top-left-radius: 1.2em;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 99%;
 }
 .heberComp .divText {
-  width: 100%;
-  margin-top: -0.25em;
-  background-color: #beefff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin-left: 0.5em;
 }
 .heberComp .divText h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin: 0.2em;
 }
 .heberComp .divText h3 {
-  font-size: 1em;
-}
-.heberComp .divText h4 {
   font-size: 0.9em;
+  margin-top: 0.2em;
+}
+.heberComp .divText .rating {
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .heberComp {
+    width: 100%;
+    border-bottom: 1em;
+  }
 }/*# sourceMappingURL=heberge.css.map */
